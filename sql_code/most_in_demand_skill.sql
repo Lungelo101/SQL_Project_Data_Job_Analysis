@@ -8,7 +8,7 @@ WITH top_paying_jobs AS(
                 job_postings_fact
             WHERE
                 job_title_short = 'Data Engineer' AND 
-                job_location = 'Anywhere' AND 
+                --job_location = 'Anywhere' AND 
                 salary_year_avg IS NOT NULL
             ORDER BY    
                 salary_year_avg DESC
